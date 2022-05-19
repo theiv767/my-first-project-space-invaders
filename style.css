@@ -1,0 +1,272 @@
+@keyframes neon{
+    from{
+        filter: drop-shadow(0 0 0 var(--cor-neon))
+    }
+    to{
+        filter: drop-shadow(0 0 40px var(--cor-neon));
+    }
+
+}
+
+@font-face {
+    font-family: 'cyberPunk';
+    src: url('fonte/GameOfSquids-1GMVL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    
+    background-size: 100%;
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+
+}
+#tudo{
+    background-image: url(imagens/possivelBackground.gif);
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    z-index: -1;
+
+}
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 10px;
+    color: rgb(241, 238, 247);
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon: #dbd830;
+    font-family: cyberPunk;
+    font-size: 70px;
+    color: #fffecc;
+    
+}
+
+#name{
+    color: white;
+    margin-bottom: 0.3%;
+    margin-top: 0.3%;
+    font-family: cyberPunk;
+}
+
+#pontos{
+    color: white;
+    margin-bottom: 0.3%;
+    margin-top: 0.3%;
+    font-family: cyberPunk;
+}
+
+#lifeFull{
+    width: 300px;
+    border: 1px solid;
+    height: 20px;
+    position: relative;
+    margin-bottom: 0.4%;
+}
+#barraLife{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 233, 64);
+    opacity: 0.3;
+
+}
+#especialAttack{
+    width: 200px;
+    border: 1px solid;
+    height: 20px;
+    position: relative;
+}
+#barraAttack{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(38, 145, 245);
+    opacity: 0.5;
+}
+
+#telaInic{
+    margin-left: 18vw;
+    margin-top: 2vh;
+    position: relative;
+    width: 60vw;
+    height: 450px;
+    border: 3px solid;
+    border-radius: 15px 50px;
+    background-image: url(imagens/menu.gif);
+    background-size: auto;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px 0 #3490db inset, 0 0 10px 4px #4a69bd;
+    align-items: center;
+   
+    
+}
+
+#hint{
+    text-align: center; 
+    margin-bottom: 0.1%;
+   
+    color: rgb(253, 243, 185);
+    font-family: cyberPunk;
+}
+
+#inputName{
+    text-align: center;
+    margin-left: 38.5%;
+    width: 22%;
+    margin-top: 2%;
+    opacity: 0.5;
+    border: 1px solid;
+    box-shadow: 0 0 5px 0 #dbd830 inset, 0 0 5px 3px #8bb5e6;
+
+}
+
+#bIniciar{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    width: 30%;
+    height: 10%;
+    margin-top: 3%;
+    border-radius: 8px;
+    border-color: #3498db;
+    color: rgb(255, 255, 255);
+    border: 1px solid;
+    box-shadow: 0 0 40px 40px #1976cc inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    opacity: 0.6;
+    font-family: cyberPunk;
+
+    
+}
+#bIniciar:hover {
+    opacity: 1;
+    box-shadow: 0 0 10px 0 #4124e7 inset, 0 0 10px 4px #3814da;
+    color: rgb(49, 119, 211);
+}
+
+#navP{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-image: url(imagens/naveP.gif);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    
+    
+
+
+}
+
+.tiroInimigo{
+    width: 25px;
+    height: 24px;
+    background-image: url(imagens/laserRed10r.png);
+    position: absolute;
+    background-size: auto;
+    box-shadow: 0 0 10px 0 #b61b1bbb inset, 0 0 10px 4px #b61b1bbb;
+
+}
+
+.tiroPlayer{
+    width: 9px;
+    height: 22px;
+    background-image: url(imagens/laserBlue04.png);
+    position: absolute;
+    background-size: auto;
+    box-shadow: 0 0 10px 0 #50b2eb inset, 0 0 10px 4px #50b2eb;
+
+}
+
+.explosaoInimigo{
+    width: 65px;
+    height: 78px;
+    position: absolute;
+}
+
+.inimigo{
+    width: 61px;
+    height: 60px;
+    background-image: url(imagens/inimigos.png);
+    position: absolute;
+
+}
+
+.meteoro{
+    width: 190px;
+    height: 157px;
+    position: absolute;
+    background-image: url(imagens/download-removebg-preview.png);
+
+}
+
+.lifeMeteoro{
+    width: 100px;
+    border: 1px solid;
+    height: 20px;
+    position: absolute;
+}
+
+.barraLifeMeteoro{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 95, 233);
+    opacity: 0.5;
+
+}
+
+#telaGameOver{
+    margin-left: 18%;
+    margin-top: 10%;
+    position: relative;
+    width: 60%;
+    height: 450px;
+    align-items: center;
+    display: none;
+    z-index: 10;
+    
+}
+
+#bGameOver{
+    position: absolute;
+    left: 41%;
+    width: 18%;
+    height: 7.5%;
+    border-radius: 8px;
+    border-color: #3498db;
+    color: rgb(255, 255, 255);
+    border: 1px solid;
+    box-shadow: 0 0 40px 40px #1976cc inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    opacity: 0.6;
+    font-family: cyberPunk;
+    display: none;
+    z-index: 10;
+}
+
+#bGameOver:hover {
+    opacity: 1;
+    box-shadow: 0 0 10px 0 #4124e7 inset, 0 0 10px 4px #3814da;
+    color: rgb(49, 119, 211);
+}
+
+.botaoMusica{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    background-image: url(imagens/semAudio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+
+}
