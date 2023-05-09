@@ -1,6 +1,6 @@
-# primeiro-projeto-jogo-de-nave :space_invader:
-trabalho de primeiro semestre do curso de ciências da computação
+# My first project / space invaders:
+first semester work of computer science course
 
-[testar jogando](https://theiv767.github.io/primeiro-projeto-jogo-de-nave/)
+[play game](https://theiv767.github.io/primeiro-projeto-jogo-de-nave/)
 ***
-OBS:  movimentação: < W,A,S,D >       tiro: < J > 
+OBS:  movement: < W,A,S,D >       tiro: < J > 
